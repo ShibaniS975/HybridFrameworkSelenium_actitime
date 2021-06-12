@@ -2,24 +2,32 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10574" started-at="2021-06-11T20:00:25Z" finished-at="2021-06-11T20:00:35Z">
+  <suite name="Default suite" duration-ms="18625" started-at="2021-06-12T05:01:57Z" finished-at="2021-06-12T05:02:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10574" started-at="2021-06-11T20:00:25Z" finished-at="2021-06-11T20:00:35Z">
+    <test name="Default test" duration-ms="18625" started-at="2021-06-12T05:01:57Z" finished-at="2021-06-12T05:02:16Z">
       <class name="com.acti.testcases.TC01_Login">
-        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC01_Login@42d80b78]" name="preconditions" is-config="true" duration-ms="7205" started-at="2021-06-11T16:00:25Z" finished-at="2021-06-11T16:00:32Z">
+        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC01_Login@3bfdc050]" name="preconditions" is-config="true" duration-ms="8029" started-at="2021-06-12T01:01:57Z" finished-at="2021-06-12T01:02:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preconditions -->
-        <test-method status="PASS" signature="verifyLogoImg()[pri:1, instance:com.acti.testcases.TC01_Login@42d80b78]" name="verifyLogoImg" duration-ms="81" started-at="2021-06-11T16:00:32Z" finished-at="2021-06-11T16:00:32Z">
+        <test-method status="PASS" signature="verifyLogoImg()[pri:1, instance:com.acti.testcases.TC01_Login@3bfdc050]" name="verifyLogoImg" duration-ms="95" started-at="2021-06-12T01:02:05Z" finished-at="2021-06-12T01:02:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogoImg -->
-        <test-method status="PASS" signature="testLogin()[pri:2, instance:com.acti.testcases.TC01_Login@42d80b78]" name="testLogin" duration-ms="3199" started-at="2021-06-11T16:00:32Z" finished-at="2021-06-11T16:00:35Z">
+        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC01_Login@3bfdc050]" name="postconditions" is-config="true" duration-ms="77" started-at="2021-06-12T01:02:05Z" finished-at="2021-06-12T01:02:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postconditions -->
+        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC01_Login@3bfdc050]" name="preconditions" is-config="true" duration-ms="7083" started-at="2021-06-12T01:02:05Z" finished-at="2021-06-12T01:02:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preconditions -->
+        <test-method status="PASS" signature="testLogin()[pri:2, instance:com.acti.testcases.TC01_Login@3bfdc050]" name="testLogin" duration-ms="3240" started-at="2021-06-12T01:02:12Z" finished-at="2021-06-12T01:02:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC01_Login@42d80b78]" name="postconditions" is-config="true" duration-ms="75" started-at="2021-06-11T16:00:35Z" finished-at="2021-06-11T16:00:35Z">
+        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC01_Login@3bfdc050]" name="postconditions" is-config="true" duration-ms="82" started-at="2021-06-12T01:02:15Z" finished-at="2021-06-12T01:02:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postconditions -->

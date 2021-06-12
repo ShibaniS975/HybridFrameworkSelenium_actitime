@@ -9,21 +9,11 @@ import org.testng.annotations.Test;
 import com.acti.base.DriverScript;
 import com.acti.pages.LoginPage;
 
-public class TC01_Login extends DriverScript {
-	
-	public static LoginPage loginPage;
-	
-	@BeforeTest
-	public void preconditions()
-	{
-		initBrowser();
-		launchApplication();
-	}
-
+public class TC01_Login extends BaseTest {
+		
 	@Test(priority=2)
 	public void testLogin()
 	{
-		//loginPage = new LoginPage();
 		loginPage.loginApplication("admin", "manager");
 		try {
 			Thread.sleep(3000);
@@ -36,14 +26,9 @@ public class TC01_Login extends DriverScript {
 	@Test(priority=1)
 	public void verifyLogoImg()
 	{
-		loginPage = new LoginPage();
 		boolean flag = loginPage.verifyLogo();
 		System.out.println(flag);
 	}
 	
-	@AfterTest
-	public void postconditions()
-	{
-		closeApplication();
-	}
+	
 }
