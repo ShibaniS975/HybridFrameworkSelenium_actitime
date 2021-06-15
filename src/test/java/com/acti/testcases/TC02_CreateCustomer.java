@@ -6,6 +6,7 @@ import com.acti.base.DriverScript;
 import com.acti.pages.EnterTimeTrack;
 import com.acti.pages.LoginPage;
 import com.acti.pages.TaskList;
+import com.acti.utils.Generic;
 
 public class TC02_CreateCustomer extends BaseTest{
 	
@@ -18,7 +19,12 @@ public class TC02_CreateCustomer extends BaseTest{
 		taskList.clickAddnew();
 		taskList.clickAddnewCustomer();
 		taskList.enterCustomerName("Abhishek Sharma");
-		Thread.sleep(3000);
+		taskList.enterCustomerDesc("ABC Corp");
+		taskList.clickProjectDropDwn();
+		taskList.clickProject();
+		taskList.clickCreateCustomerBtn();
+		Generic.fn_sleep();
+		System.out.println(taskList.getSuccessMsg());
 	}
 	
 

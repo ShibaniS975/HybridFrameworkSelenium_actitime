@@ -2,32 +2,56 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18625" started-at="2021-06-12T05:01:57Z" finished-at="2021-06-12T05:02:16Z">
+  <suite name="Default suite" duration-ms="17071" started-at="2021-06-15T03:34:22Z" finished-at="2021-06-15T03:34:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18625" started-at="2021-06-12T05:01:57Z" finished-at="2021-06-12T05:02:16Z">
+    <test name="Default test" duration-ms="17071" started-at="2021-06-15T03:34:22Z" finished-at="2021-06-15T03:34:39Z">
       <class name="com.acti.testcases.TC01_Login">
-        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC01_Login@3bfdc050]" name="preconditions" is-config="true" duration-ms="8029" started-at="2021-06-12T01:01:57Z" finished-at="2021-06-12T01:02:05Z">
+        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC01_Login@5e3a8624]" name="preconditions" is-config="true" duration-ms="5337" started-at="2021-06-14T23:34:22Z" finished-at="2021-06-14T23:34:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preconditions -->
-        <test-method status="PASS" signature="verifyLogoImg()[pri:1, instance:com.acti.testcases.TC01_Login@3bfdc050]" name="verifyLogoImg" duration-ms="95" started-at="2021-06-12T01:02:05Z" finished-at="2021-06-12T01:02:05Z">
+        <test-method status="PASS" signature="testMultipleLogins(java.lang.String, java.lang.String)[pri:0, instance:com.acti.testcases.TC01_Login@5e3a8624]" name="testMultipleLogins" duration-ms="3281" started-at="2021-06-14T23:34:28Z" data-provider="actiData" finished-at="2021-06-14T23:34:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogoImg -->
-        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC01_Login@3bfdc050]" name="postconditions" is-config="true" duration-ms="77" started-at="2021-06-12T01:02:05Z" finished-at="2021-06-12T01:02:05Z">
+        </test-method> <!-- testMultipleLogins -->
+        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC01_Login@5e3a8624]" name="postconditions" is-config="true" duration-ms="83" started-at="2021-06-14T23:34:31Z" finished-at="2021-06-14T23:34:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postconditions -->
-        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC01_Login@3bfdc050]" name="preconditions" is-config="true" duration-ms="7083" started-at="2021-06-12T01:02:05Z" finished-at="2021-06-12T01:02:12Z">
+        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC01_Login@5e3a8624]" name="preconditions" is-config="true" duration-ms="4621" started-at="2021-06-14T23:34:31Z" finished-at="2021-06-14T23:34:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preconditions -->
-        <test-method status="PASS" signature="testLogin()[pri:2, instance:com.acti.testcases.TC01_Login@3bfdc050]" name="testLogin" duration-ms="3240" started-at="2021-06-12T01:02:12Z" finished-at="2021-06-12T01:02:15Z">
+        <test-method status="PASS" signature="testMultipleLogins(java.lang.String, java.lang.String)[pri:0, instance:com.acti.testcases.TC01_Login@5e3a8624]" name="testMultipleLogins" duration-ms="3213" started-at="2021-06-14T23:34:36Z" data-provider="actiData" finished-at="2021-06-14T23:34:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC01_Login@3bfdc050]" name="postconditions" is-config="true" duration-ms="82" started-at="2021-06-12T01:02:15Z" finished-at="2021-06-12T01:02:16Z">
+        </test-method> <!-- testMultipleLogins -->
+        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC01_Login@5e3a8624]" name="postconditions" is-config="true" duration-ms="78" started-at="2021-06-14T23:34:39Z" finished-at="2021-06-14T23:34:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postconditions -->

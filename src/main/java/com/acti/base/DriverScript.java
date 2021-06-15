@@ -54,14 +54,7 @@ public class DriverScript {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		//launchApplication();
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		//closeApplication();
+		
 	}
 	public static void launchApplication()
 	{
