@@ -20,12 +20,46 @@ public class TaskList extends DriverScript{
 	@FindBy(xpath="(//input[@placeholder='Start typing name ...'])[1]") WebElement searchCustomerTb;
 	@FindBy(xpath="//span[@class='innerHtml']") WebElement creationToastMessage;
 	@FindBy(xpath="(//div[@class='dropdownButton'])[15]") WebElement projectDrpdwn;
-	@FindBy(xpath="(//div[text()='Big Bang Company'])[7]") WebElement bigBangCompany;
+	@FindBy(xpath="//div[contains(@class,'itemRow cpItemRow')][normalize-space()='Big Bang Company']") WebElement bigBangCompany;
+	@FindBy(xpath="(//input[@placeholder='Start typing name ...'])[1]") WebElement custSearchbx;
+	@FindBy(xpath="//div[@class='node customerNode editable selected']//div[@class='title']") WebElement custSearched;
+	@FindBy(xpath="(//div[@class='editButton'])[15]") WebElement custEditbtn; 
+	@FindBy(xpath="(//div[@class='actionButton'])[7]") WebElement custActionsBtn;
+	@FindBy(xpath="//div[text()='Delete']") WebElement deleteBtn;
+	@FindBy(xpath="(//div[@class='buttonIcon'])[3]") WebElement permanentlyDeleteBtn;
+	@FindBy(xpath="//span[@class='innerHtml']") WebElement deleteToastMsg;
 	
-
 	public TaskList() 
 	{
 		PageFactory.initElements(driver, this);
+	}
+	public void enterCustomerSearch(String customerName)
+	{
+		custSearchbx.sendKeys(customerName);
+	}
+	public void clickCustomerSearched()
+	{
+		custSearched.click();
+	}
+	public void clickCustomerEditBtn()
+	{
+		custEditbtn.click();
+	}
+	public void clickCustomerActionsBtn()
+	{
+		custActionsBtn.click();
+	}
+	public void clickDeleteBtn()
+	{
+		deleteBtn.click();
+	}
+	public void clickPermanentlyDeleteBtn()
+	{
+		permanentlyDeleteBtn.click();
+	}
+	public String getDeleteToastMsg()
+	{
+		return deleteToastMsg.getText();
 	}
 	public void clickAddnew()
 	{

@@ -1,7 +1,9 @@
 package com.acti.testcases;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 
@@ -10,12 +12,26 @@ import com.acti.pages.EnterTimeTrack;
 import com.acti.pages.LoginPage;
 import com.acti.pages.TaskList;
 import com.acti.utils.ExcelLib;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class BaseTest extends DriverScript {
 	
 	LoginPage loginPage;
 	EnterTimeTrack enterTimeTrack;
 	TaskList taskList;
+	ExtentHtmlReporter htmlReport;
+	ExtentReports extent;
+	ExtentTest logger;
+	
+	@BeforeClass
+	public void preTest()
+	{
+		htmlReport = new ExtentHtmlReporter("./Reports/AutomationActiReport.html");
+		extent = new ExtentReports();
+		extent.attachReporter(htmlReport);
+	}
 	
 	@BeforeMethod
 	public void preconditions()
@@ -46,5 +62,11 @@ public class BaseTest extends DriverScript {
 			data[i][1]=xl.getData(0, i, 1);
 		}
 		return data;
+	}
+	
+	@AfterClass
+	public void  tearDown()
+	{
+		extent.flush();
 	}
 }

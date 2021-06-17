@@ -1,17 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17071" started-at="2021-06-15T03:34:22Z" finished-at="2021-06-15T03:34:39Z">
+  <suite name="Suite" duration-ms="81210" started-at="2021-06-17T03:47:22Z" finished-at="2021-06-17T03:48:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17071" started-at="2021-06-15T03:34:22Z" finished-at="2021-06-15T03:34:39Z">
+    <test name="Test" duration-ms="81210" started-at="2021-06-17T03:47:22Z" finished-at="2021-06-17T03:48:43Z">
+      <class name="com.acti.testcases.TC02_CreateCustomer">
+        <test-method status="PASS" signature="preTest()[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@685cb137]" name="preTest" is-config="true" duration-ms="2" started-at="2021-06-16T23:47:39Z" finished-at="2021-06-16T23:47:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preTest -->
+        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@685cb137]" name="preconditions" is-config="true" duration-ms="5166" started-at="2021-06-16T23:47:39Z" finished-at="2021-06-16T23:47:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preconditions -->
+        <test-method status="PASS" signature="testCreateCustomer()[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@685cb137]" name="testCreateCustomer" duration-ms="6686" started-at="2021-06-16T23:47:45Z" finished-at="2021-06-16T23:47:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateCustomer -->
+        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@685cb137]" name="postconditions" is-config="true" duration-ms="100" started-at="2021-06-16T23:47:51Z" finished-at="2021-06-16T23:47:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postconditions -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@685cb137]" name="tearDown" is-config="true" duration-ms="259" started-at="2021-06-16T23:47:51Z" finished-at="2021-06-16T23:47:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.acti.testcases.TC02_CreateCustomer -->
+      <class name="com.acti.testcases.TC03_DeleteCustomer">
+        <test-method status="PASS" signature="preTest()[pri:0, instance:com.acti.testcases.TC03_DeleteCustomer@6a41eaa2]" name="preTest" is-config="true" duration-ms="1" started-at="2021-06-16T23:47:52Z" finished-at="2021-06-16T23:47:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preTest -->
+        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC03_DeleteCustomer@6a41eaa2]" name="preconditions" is-config="true" duration-ms="4748" started-at="2021-06-16T23:47:52Z" finished-at="2021-06-16T23:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preconditions -->
+        <test-method status="FAIL" signature="testDeleteCustomer()[pri:0, instance:com.acti.testcases.TC03_DeleteCustomer@6a41eaa2]" name="testDeleteCustomer" duration-ms="32913" started-at="2021-06-16T23:47:56Z" finished-at="2021-06-16T23:48:29Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='node customerNode editable selected']//div[@class='title']"}
+  (Session info: chrome=91.0.4472.101)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-OGNALAM', ip: '10.0.0.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sagar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57430}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 706ce46c7f403fdd1cbe441aafd6ea58
+*** Element info: {Using=xpath, value=//div[@class='node customerNode editable selected']//div[@class='title']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='node customerNode editable selected']//div[@class='title']"}
+  (Session info: chrome=91.0.4472.101)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-OGNALAM', ip: '10.0.0.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\sagar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57430}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 706ce46c7f403fdd1cbe441aafd6ea58
+*** Element info: {Using=xpath, value=//div[@class='node customerNode editable selected']//div[@class='title']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.acti.pages.TaskList.clickCustomerSearched(TaskList.java:42)
+	at com.acti.testcases.TC03_DeleteCustomer.testDeleteCustomer(TC03_DeleteCustomer.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteCustomer -->
+        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC03_DeleteCustomer@6a41eaa2]" name="postconditions" is-config="true" duration-ms="87" started-at="2021-06-16T23:48:29Z" finished-at="2021-06-16T23:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postconditions -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.acti.testcases.TC03_DeleteCustomer@6a41eaa2]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-06-16T23:48:29Z" finished-at="2021-06-16T23:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.acti.testcases.TC03_DeleteCustomer -->
       <class name="com.acti.testcases.TC01_Login">
-        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC01_Login@5e3a8624]" name="preconditions" is-config="true" duration-ms="5337" started-at="2021-06-14T23:34:22Z" finished-at="2021-06-14T23:34:28Z">
+        <test-method status="PASS" signature="preTest()[pri:0, instance:com.acti.testcases.TC01_Login@6a4f787b]" name="preTest" is-config="true" duration-ms="154" started-at="2021-06-16T23:47:22Z" finished-at="2021-06-16T23:47:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preTest -->
+        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC01_Login@6a4f787b]" name="preconditions" is-config="true" duration-ms="5475" started-at="2021-06-16T23:47:22Z" finished-at="2021-06-16T23:47:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preconditions -->
-        <test-method status="PASS" signature="testMultipleLogins(java.lang.String, java.lang.String)[pri:0, instance:com.acti.testcases.TC01_Login@5e3a8624]" name="testMultipleLogins" duration-ms="3281" started-at="2021-06-14T23:34:28Z" data-provider="actiData" finished-at="2021-06-14T23:34:31Z">
+        <test-method status="PASS" signature="testMultipleLogins(java.lang.String, java.lang.String)[pri:0, instance:com.acti.testcases.TC01_Login@6a4f787b]" name="testMultipleLogins" duration-ms="3255" started-at="2021-06-16T23:47:28Z" data-provider="actiData" finished-at="2021-06-16T23:47:31Z">
           <params>
             <param index="0">
               <value>
@@ -27,15 +144,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMultipleLogins -->
-        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC01_Login@5e3a8624]" name="postconditions" is-config="true" duration-ms="83" started-at="2021-06-14T23:34:31Z" finished-at="2021-06-14T23:34:31Z">
+        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC01_Login@6a4f787b]" name="postconditions" is-config="true" duration-ms="100" started-at="2021-06-16T23:47:31Z" finished-at="2021-06-16T23:47:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postconditions -->
-        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC01_Login@5e3a8624]" name="preconditions" is-config="true" duration-ms="4621" started-at="2021-06-14T23:34:31Z" finished-at="2021-06-14T23:34:36Z">
+        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC01_Login@6a4f787b]" name="preconditions" is-config="true" duration-ms="5007" started-at="2021-06-16T23:47:31Z" finished-at="2021-06-16T23:47:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preconditions -->
-        <test-method status="PASS" signature="testMultipleLogins(java.lang.String, java.lang.String)[pri:0, instance:com.acti.testcases.TC01_Login@5e3a8624]" name="testMultipleLogins" duration-ms="3213" started-at="2021-06-14T23:34:36Z" data-provider="actiData" finished-at="2021-06-14T23:34:39Z">
+        <test-method status="PASS" signature="testMultipleLogins(java.lang.String, java.lang.String)[pri:0, instance:com.acti.testcases.TC01_Login@6a4f787b]" name="testMultipleLogins" duration-ms="3222" started-at="2021-06-16T23:47:36Z" data-provider="actiData" finished-at="2021-06-16T23:47:39Z">
           <params>
             <param index="0">
               <value>
@@ -51,11 +168,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMultipleLogins -->
-        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC01_Login@5e3a8624]" name="postconditions" is-config="true" duration-ms="78" started-at="2021-06-14T23:34:39Z" finished-at="2021-06-14T23:34:39Z">
+        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC01_Login@6a4f787b]" name="postconditions" is-config="true" duration-ms="91" started-at="2021-06-16T23:47:39Z" finished-at="2021-06-16T23:47:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postconditions -->
+        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC01_Login@6a4f787b]" name="preconditions" is-config="true" duration-ms="5287" started-at="2021-06-16T23:48:29Z" finished-at="2021-06-16T23:48:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preconditions -->
+        <test-method status="PASS" signature="verifyLogoImg()[pri:1, instance:com.acti.testcases.TC01_Login@6a4f787b]" name="verifyLogoImg" duration-ms="31" started-at="2021-06-16T23:48:35Z" finished-at="2021-06-16T23:48:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoImg -->
+        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC01_Login@6a4f787b]" name="postconditions" is-config="true" duration-ms="95" started-at="2021-06-16T23:48:35Z" finished-at="2021-06-16T23:48:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postconditions -->
+        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC01_Login@6a4f787b]" name="preconditions" is-config="true" duration-ms="4785" started-at="2021-06-16T23:48:35Z" finished-at="2021-06-16T23:48:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preconditions -->
+        <test-method status="PASS" signature="testLogin()[pri:2, instance:com.acti.testcases.TC01_Login@6a4f787b]" name="testLogin" duration-ms="3201" started-at="2021-06-16T23:48:40Z" finished-at="2021-06-16T23:48:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="postconditions()[pri:0, instance:com.acti.testcases.TC01_Login@6a4f787b]" name="postconditions" is-config="true" duration-ms="90" started-at="2021-06-16T23:48:43Z" finished-at="2021-06-16T23:48:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postconditions -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.acti.testcases.TC01_Login@6a4f787b]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-06-16T23:48:43Z" finished-at="2021-06-16T23:48:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.acti.testcases.TC01_Login -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

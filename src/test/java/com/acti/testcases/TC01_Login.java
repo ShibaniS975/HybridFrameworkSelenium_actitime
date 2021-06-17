@@ -14,14 +14,14 @@ import com.acti.utils.Generic;
 
 public class TC01_Login extends BaseTest {
 		
-	//@Test
+	@Test(priority=2)
 	public void testLogin()
 	{
 		loginPage.loginApplication("admin", "manager");
 		Generic.fn_sleep();
 		
 	}	
-	//@Test(priority=1)
+	@Test(priority=1)
 	public void verifyLogoImg()
 	{
 		boolean flag = loginPage.verifyLogo();
