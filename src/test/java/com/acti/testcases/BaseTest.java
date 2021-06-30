@@ -1,5 +1,6 @@
 package com.acti.testcases;
 
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -12,6 +13,7 @@ import com.acti.pages.EnterTimeTrack;
 import com.acti.pages.LoginPage;
 import com.acti.pages.TaskList;
 import com.acti.utils.ExcelLib;
+import com.acti.utils.Generic;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
@@ -45,8 +47,12 @@ public class BaseTest extends DriverScript {
 	
 	
 	@AfterMethod
-	public void postconditions()
-	{
+	public void postconditions(ITestResult result)
+	{	
+		if(result.getStatus()==ITestResult.FAILURE)
+		{
+			Generic.makescreenshot(driver);
+		}
 		closeApplication();
 	}
 	
