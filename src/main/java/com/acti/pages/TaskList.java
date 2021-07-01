@@ -7,10 +7,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.acti.base.DriverScript;
+import com.acti.utils.Generic;
 
 public class TaskList extends DriverScript{
 	
-	WebDriverWait wait;
+	
 	
 	@FindBy(xpath="//div[@class='title ellipsis']") WebElement addNewDrpdwn;
 	@FindBy(xpath="//div[@class='item createNewCustomer']") WebElement addnewCustomer;
@@ -20,7 +21,7 @@ public class TaskList extends DriverScript{
 	@FindBy(xpath="(//input[@placeholder='Start typing name ...'])[1]") WebElement searchCustomerTb;
 	@FindBy(xpath="//span[@class='innerHtml']") WebElement creationToastMessage;
 	@FindBy(xpath="(//div[@class='dropdownButton'])[15]") WebElement projectDrpdwn;
-	@FindBy(xpath="//div[contains(@class,'itemRow cpItemRow')][normalize-space()='Big Bang Company']") WebElement bigBangCompany;
+	@FindBy(xpath="//div[contains(@class,'itemRow cpItemRow')][normalize-space()='Galaxy Corporation']") WebElement galaxyCompany;
 	@FindBy(xpath="(//input[@placeholder='Start typing name ...'])[1]") WebElement custSearchbx;
 	@FindBy(xpath="//div[@class='node customerNode editable selected']//div[@class='title']") WebElement custSearched;
 	@FindBy(xpath="(//div[@class='editButton'])[15]") WebElement custEditbtn; 
@@ -79,8 +80,7 @@ public class TaskList extends DriverScript{
 	}
 	public void clickCreateCustomerBtn()
 	{	
-		 wait = new WebDriverWait(driver, 20);
-		 wait.until(ExpectedConditions.elementToBeClickable(createCustBtn));
+		 Generic.fn_waitforWebElementPresence(driver, createCustBtn);
 		 createCustBtn.click();
 	}
 	public void clickProjectDropDwn()
@@ -89,7 +89,7 @@ public class TaskList extends DriverScript{
 	}
 	public void clickProject()
 	{
-		bigBangCompany.click();
+		galaxyCompany.click();
 	}
 	public String getSuccessMsg()
 	{

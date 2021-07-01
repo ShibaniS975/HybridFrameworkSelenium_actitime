@@ -18,10 +18,12 @@ public class TC01_Login extends BaseTest {
 	public void testLogin()
 	{
 		loginPage.loginApplication("admin", "manager");
-		Generic.fn_sleep();
+		//Generic.fn_sleep();
+		Generic.fn_waitforPageTitle(driver, "Enter");
+		System.out.println(driver.getTitle());
 		
 	}	
-	@Test(priority=1)
+	/*@Test(priority=1)
 	public void verifyLogoImg()
 	{
 		boolean flag = loginPage.verifyLogo();
@@ -33,7 +35,7 @@ public class TC01_Login extends BaseTest {
 	{
 		loginPage.loginApplication(username, password);
 		Generic.fn_sleep();
-	}
+	}*/
 	
 	
 	

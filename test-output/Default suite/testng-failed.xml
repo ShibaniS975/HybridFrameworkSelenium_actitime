@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.acti.testcases.TC03_DeleteCustomer">
+      <class name="com.acti.testcases.TC02_CreateCustomer">
         <methods>
-          <include name="testDeleteCustomer"/>
           <include name="preTest"/>
           <include name="postconditions"/>
           <include name="preconditions"/>
+          <include name="testCreateCustomer"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.acti.testcases.TC03_DeleteCustomer -->
+      </class> <!-- com.acti.testcases.TC02_CreateCustomer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
