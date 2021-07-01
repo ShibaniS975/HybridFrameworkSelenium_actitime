@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15139" started-at="2021-07-01T04:08:57Z" finished-at="2021-07-01T04:09:12Z">
+  <suite name="Default suite" duration-ms="12431" started-at="2021-07-01T19:05:25Z" finished-at="2021-07-01T19:05:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15139" started-at="2021-07-01T04:08:57Z" finished-at="2021-07-01T04:09:12Z">
+    <test name="Default test" duration-ms="12431" started-at="2021-07-01T19:05:25Z" finished-at="2021-07-01T19:05:38Z">
       <class name="com.acti.testcases.TC02_CreateCustomer">
-        <test-method status="PASS" signature="preTest()[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@91161c7]" name="preTest" is-config="true" duration-ms="142" started-at="2021-07-01T00:08:57Z" finished-at="2021-07-01T00:08:57Z">
+        <test-method status="PASS" signature="preTest()[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@91161c7]" name="preTest" is-config="true" duration-ms="168" started-at="2021-07-01T15:05:25Z" finished-at="2021-07-01T15:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preTest -->
-        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@91161c7]" name="preconditions" is-config="true" duration-ms="7487" started-at="2021-07-01T00:08:57Z" finished-at="2021-07-01T00:09:05Z">
+        <test-method status="PASS" signature="preconditions()[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@91161c7]" name="preconditions" is-config="true" duration-ms="5363" started-at="2021-07-01T15:05:26Z" finished-at="2021-07-01T15:05:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preconditions -->
-        <test-method status="PASS" signature="testCreateCustomer()[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@91161c7]" name="testCreateCustomer" duration-ms="7125" started-at="2021-07-01T00:09:05Z" finished-at="2021-07-01T00:09:12Z">
+        <test-method status="PASS" signature="testCreateCustomer()[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@91161c7]" name="testCreateCustomer" duration-ms="6517" started-at="2021-07-01T15:05:31Z" finished-at="2021-07-01T15:05:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateCustomer -->
-        <test-method status="PASS" signature="postconditions(org.testng.ITestResult)[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@91161c7]" name="postconditions" is-config="true" duration-ms="94" started-at="2021-07-01T00:09:12Z" finished-at="2021-07-01T00:09:12Z">
+        <test-method status="PASS" signature="postconditions(org.testng.ITestResult)[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@91161c7]" name="postconditions" is-config="true" duration-ms="82" started-at="2021-07-01T15:05:38Z" finished-at="2021-07-01T15:05:38Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postconditions -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@91161c7]" name="tearDown" is-config="true" duration-ms="273" started-at="2021-07-01T00:09:12Z" finished-at="2021-07-01T00:09:12Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.acti.testcases.TC02_CreateCustomer@91161c7]" name="tearDown" is-config="true" duration-ms="283" started-at="2021-07-01T15:05:38Z" finished-at="2021-07-01T15:05:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
